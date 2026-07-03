@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Bebas+Neue&family=Satisfy&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base styles for J&A */
+@theme {
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-script: "Satisfy", cursive;
+}
+
+.container-custom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0) }
+  2% { transform: translate(-2px, 2px); filter: hue-rotate(90deg) }
+  4% { transform: translate(2px, -2px); filter: hue-rotate(0deg) }
+  6% { transform: translate(0) }
+  100% { transform: translate(0) }
+}
+.glitch-effect {
+  animation: glitch 3s infinite;
+  display: inline-block;
+}

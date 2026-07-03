@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Big+Shoulders+Display:wght@900&family=Yellowtail&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base styles for J&A */
+@theme {
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-script: "Satisfy", cursive;
+  --font-logo: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+.container-custom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
