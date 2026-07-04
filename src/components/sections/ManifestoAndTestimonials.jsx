@@ -28,11 +28,17 @@ const ManifestoAndTestimonials = () => {
           <div className="w-full md:w-1/2 aspect-[3/4] md:aspect-auto h-[500px] md:h-full relative overflow-hidden">
              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10 md:hidden" />
              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-black/90 z-10 hidden md:block" />
-             <img 
-               src="/LU%20&%20TOMI%20RESUMEN%20(256).JPG" 
-               alt="Julián Lettieri" 
-               className="w-full h-full object-cover scale-[1.3] origin-[60%_35%]"
-             />
+             <picture>
+               <source
+                 media="(max-width: 767px)"
+                 srcSet="/manifiesto-julian-mobile.jpg"
+               />
+               <img
+                 src="/LU%20&%20TOMI%20RESUMEN%20(256).JPG"
+                 alt="Julián Lettieri"
+                 className="w-full h-full object-cover md:scale-[1.3] md:origin-[60%_35%]"
+               />
+             </picture>
           </div>
           
           {/* Content */}
@@ -81,7 +87,7 @@ const ManifestoAndTestimonials = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-auto h-full">
             {testimonials.map((test, index) => (
               <div key={index} className="flex flex-col">
-                <span className="font-heading text-6xl text-gray-800 leading-none mb-4">“</span>
+                <span className="font-heading text-6xl text-gray-800 leading-none mb-4">"</span>
                 <p className="text-sm text-gray-300 font-light leading-relaxed mb-6 flex-1">
                   "{test.quote}"
                 </p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { TrinologoWordmark } from '../ui/TrinologoLogo';
 const Navbar = () => {
@@ -30,15 +30,17 @@ const Navbar = () => {
         </a>
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            
-              key={link.name}
-              href={link.href}
-              className="text-xs font-semibold tracking-widest text-gray-300 hover:text-white transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-xs font-semibold tracking-widest text-gray-300 hover:text-white transition-colors"
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </div>
         {/* Menu Button / Mobile Toggle */}
         <div className="flex items-center">
@@ -61,16 +63,18 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-center space-y-6 px-6">
-          {navLinks.map((link) => (
-            
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-semibold tracking-widest text-gray-300 hover:text-white transition-colors"
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-sm font-semibold tracking-widest text-gray-300 hover:text-white transition-colors"
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </div>
       </div>
     </nav>
