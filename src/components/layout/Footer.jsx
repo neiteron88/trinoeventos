@@ -69,15 +69,15 @@ const Footer = () => {
             <div className="hidden md:block w-[1px] h-4 bg-gray-700 mx-8"></div>
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
               <a href="mailto:hola@trino.com.ar" className="hover:text-white transition-colors lowercase tracking-normal font-medium text-xs">
-                hola@trino.com.ar
+                organiza.trino@gmail.com
               </a>
-              <span className="text-gray-500">CÓRDOBA, ARG.</span>
+              <span className="text-gray-500">Buenos Aires, ARG.</span>
             </div>
           </div>
 
           {/* Copyright */}
           <div className="text-[10px] text-gray-600 tracking-wider">
-            © 2024 trino
+            © 2026 trino
           </div>
 
         </div>
