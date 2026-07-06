@@ -82,7 +82,7 @@ const Corporate = () => {
               Organizaciones que confiaron en TRINO.
             </h3>
           </FadeIn>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {[
               { name: 'MLS', file: '/logos/mls.png' },
               { name: 'Ledesma', file: '/logos/ledesma.png' },
@@ -91,11 +91,13 @@ const Corporate = () => {
               { name: 'Lidherma', file: '/logos/lidherma.png' },
             ].map((brand, i) => (
               <FadeIn key={brand.name} delay={i * 0.1}>
-                <img
-                  src={brand.file}
-                  alt={brand.name}
-                  className="h-6 md:h-8 w-auto object-contain grayscale opacity-40 hover:opacity-100 hover:grayscale-0 transition-all duration-500"
-                />
+                <div className="h-20 md:h-24 w-32 md:w-40 flex items-center justify-center bg-white/[0.04] rounded-xl border border-white/5 px-4 hover:bg-white/[0.08] transition-all duration-500">
+                  <img
+                    src={brand.file}
+                    alt={brand.name}
+                    className="max-h-12 md:max-h-16 max-w-full w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-500"
+                  />
+                </div>
               </FadeIn>
             ))}
           </div>
