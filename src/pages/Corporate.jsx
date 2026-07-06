@@ -78,7 +78,7 @@ const Corporate = () => {
       <section className="py-24 border-b border-white/10" id="historia">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <FadeIn>
-            <h3 className="text-[10px] font-bold tracking-[0.3em] text-white/50 uppercase mb-16 text-center">
+            <h3 className="text-[10px] font-bold tracking-[0.3em] text-white/50 uppercase mb-10 md:mb-16 text-center">
               Organizaciones que confiaron en TRINO.
             </h3>
           </FadeIn>
@@ -105,7 +105,7 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 3: EL DESAFÍO */}
-      <section className="py-32 md:py-40">
+      <section className="py-16 md:py-40">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-start">
             <div>
@@ -191,10 +191,10 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 4: LA CONFIANZA */}
-      <section className="py-40 bg-black relative">
+      <section className="py-20 md:py-40 bg-black relative">
         <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center relative z-10">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading leading-tight text-white mb-32">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading leading-tight text-white mb-16 md:mb-32">
               &ldquo;En proyectos de{' '}
               <span className="relative inline-block">
                 <span className="text-[#00E56A]">escala internacional</span>
@@ -225,13 +225,13 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 5: LA EJECUCIÓN */}
-      <section className="py-32 md:py-40 border-t border-white/5">
+      <section className="py-16 md:py-40 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <FadeIn>
-            <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-24 text-center">La Ejecución.</h2>
+            <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-12 md:mb-24 text-center">La Ejecución.</h2>
           </FadeIn>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16 gap-x-8 mb-32">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-16 gap-x-8 mb-16 md:mb-32">
             {[
               { icon: <CheckCircle2 size={24} strokeWidth={1} />, title: "Producción General" },
               { icon: <MapPin size={24} strokeWidth={1} />, title: "Logística" },
@@ -262,16 +262,16 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 6: EL RESULTADO */}
-      <section className="py-40 md:py-56 bg-black">
+      <section className="py-16 md:py-56 bg-black">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <FadeIn>
             <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-12">El Resultado.</h2>
-            <p className="text-2xl md:text-4xl font-light text-white max-w-4xl mb-32 leading-relaxed">
+            <p className="text-2xl md:text-4xl font-light text-white max-w-4xl mb-16 md:mb-32 leading-relaxed">
               Una experiencia oficial operada en Buenos Aires bajo los estándares globales de la Major League Soccer.
             </p>
           </FadeIn>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 mb-32">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16 mb-16 md:mb-32">
             <FadeIn>
               <div className="text-7xl md:text-8xl font-heading text-[#00E56A] mb-8">+80</div>
               <div className="text-base font-semibold tracking-widest text-white uppercase mb-6">Actores Clave</div>
@@ -306,7 +306,7 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 7: LO QUE DIJO GABRIEL GABOR */}
-      <section className="py-32 md:py-40 bg-[#070707] border-y border-white/5">
+      <section className="py-16 md:py-40 bg-[#070707] border-y border-white/5">
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-center">
             <FadeIn className="w-full md:w-5/12">
@@ -329,11 +329,11 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 8: MÁS CASOS DE ÉXITO */}
-      <section className="py-32 md:py-40">
+      <section className="py-16 md:py-40">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <FadeIn>
             <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-12">Más casos de éxito.</h2>
-            <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
+            <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-24 gap-12">
               <h3 className="text-2xl md:text-4xl font-light text-gray-400 max-w-2xl leading-relaxed">
                 La MLS fue uno de nuestros proyectos más desafiantes. <br/>
                 <span className="text-white">No fue el único.</span>
@@ -364,11 +364,11 @@ const Corporate = () => {
       </section>
 
       {/* SECTION 9: LO QUE APRENDIMOS */}
-      <section className="py-40 md:py-56 bg-[#030303] border-t border-white/5">
+      <section className="py-16 md:py-56 bg-[#030303] border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
           <FadeIn>
-            <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-16">Nuestra visión.</h2>
-            <p className="text-xl md:text-3xl text-gray-400 font-light leading-relaxed mb-32">
+            <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-10 md:mb-16">Nuestra visión.</h2>
+            <p className="text-xl md:text-3xl text-gray-400 font-light leading-relaxed mb-16 md:mb-32">
               Operar un evento oficial para la Major League Soccer reafirma nuestro enfoque principal.
               <br /><br />
               La excelencia técnica es un requisito indispensable.
@@ -386,7 +386,7 @@ const Corporate = () => {
       </section>
 
       {/* FINAL SECTION */}
-      <section className="relative py-48 md:py-64 flex items-center justify-center overflow-hidden">
+      <section className="relative py-20 md:py-64 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/90 z-10" />
           <img src="/MLS Watch Party (1).jpg" alt="Conversemos" className="w-full h-full object-cover grayscale" />
@@ -394,7 +394,7 @@ const Corporate = () => {
         <div className="relative z-20 max-w-4xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-heading text-white mb-10 tracking-tight">El próximo desafío.</h2>
-            <p className="text-xl md:text-2xl text-gray-400 font-light mb-16 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-400 font-light mb-10 md:mb-16 max-w-2xl mx-auto leading-relaxed">
               Si tu organización —nacional o internacional— está planificando un proyecto donde la ejecución es crítica, <span className="text-white">conversemos.</span>
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
