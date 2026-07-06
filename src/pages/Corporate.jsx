@@ -26,7 +26,7 @@ const Corporate = () => {
       <Navbar />
       
       {/* SECTION 1: FULL SCREEN HERO */}
-      <section className="relative h-screen flex flex-col justify-end pb-24 px-6 lg:px-12 overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-end pt-28 md:pt-0 pb-24 px-6 lg:px-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent z-10" />
           <motion.img 
@@ -155,7 +155,7 @@ const Corporate = () => {
                 <FadeIn delay={0.3}>
                   <div className="mt-12 pt-10 border-t border-white/10">
                     <p className="text-sm text-gray-500 font-light mb-6 tracking-wide">¿Tu próximo proyecto requiere este nivel de ejecución?</p>
-                    <a
+                    
                       href="#contacto"
                       className="inline-flex items-center space-x-4 group"
                     >
@@ -177,10 +177,8 @@ const Corporate = () => {
                   alt="El desafío"
                   className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-all duration-1000"
                 />
-                {/* Overlay que desaparece al hover */}
                 <div className="absolute inset-0 bg-[#00E56A]/10 mix-blend-color group-hover:opacity-0 transition-opacity duration-1000" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/20 transition-all duration-1000" />
-                {/* Tag que aparece al hover */}
                 <div className="absolute bottom-8 left-8 opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0">
                   <span className="text-[10px] font-bold tracking-[0.3em] text-[#00E56A] uppercase">Johnny B. Good · Puerto Madero</span>
                 </div>
@@ -347,7 +345,7 @@ const Corporate = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { client: "Clínicas Bermejo", desc: "Eventos corporativos de integración.", img: "/G&N-197.jpg" },
+              { client: "Clínicas Bermejo", desc: "Eventos corporativos de integración.", img: "/bermejo2.jpg" },
               { client: "Boda Juli Puente & Facu Miguelena", desc: "Producción integral.", img: "/LU & TOMI (1545).JPG" },
               { client: "Ledesma", desc: "Eventos institucionales.", img: "/event_corp_render.png" }
             ].map((card, i) => (
