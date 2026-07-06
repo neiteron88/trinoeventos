@@ -155,10 +155,7 @@ const Corporate = () => {
                 <FadeIn delay={0.3}>
                   <div className="mt-12 pt-10 border-t border-white/10">
                     <p className="text-sm text-gray-500 font-light mb-6 tracking-wide">¿Tu próximo proyecto requiere este nivel de ejecución?</p>
-                    
-                      href="#contacto"
-                      className="inline-flex items-center space-x-4 group"
-                    >
+                    <a href="#contacto" className="inline-flex items-center space-x-4 group">
                       <span className="px-8 py-4 bg-[#00E56A] text-black text-xs font-bold tracking-[0.25em] uppercase group-hover:bg-white transition-colors duration-300">
                         Agendar una reunión
                       </span>
