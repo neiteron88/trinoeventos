@@ -28,7 +28,8 @@ const Corporate = () => {
       {/* SECTION 1: FULL SCREEN HERO */}
       <section className="relative min-h-screen flex flex-col justify-end pt-28 md:pt-0 pb-24 px-6 lg:px-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent z-10" />
+          {/* Gradiente reforzado para mayor contraste en móvil */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-[#050505]/20 z-10" />
           <motion.img 
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
@@ -51,10 +52,10 @@ const Corporate = () => {
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-12">
             <FadeIn delay={0.2} className="max-w-2xl">
-              <p className="text-gray-300 text-base md:text-lg font-light leading-relaxed">
+              <p className="text-gray-200 text-base md:text-lg font-light leading-relaxed drop-shadow-md">
                 La MLS <span className="text-white/50">(Major League Soccer)</span> convocó a <span className="text-white font-medium">TRINO</span> para producir su experiencia oficial en Buenos Aires. El desafío era reunir a periodistas, jugadores, influencers, celebridades, representantes de clubes e invitados estratégicos en un evento alineado con sus estándares globales.
                 <br /><br />
-                <span className="text-white/70 font-medium">No había margen para el error.</span>
+                <span className="text-white font-medium">No había margen para el error.</span>
               </p>
             </FadeIn>
             
@@ -66,8 +67,8 @@ const Corporate = () => {
                 </span>
               </a>
               <div className="text-left md:text-right">
-                <span className="text-[10px] text-gray-500 uppercase tracking-widest block mb-1">↓</span>
-                <span className="text-[10px] text-gray-500 uppercase tracking-widest block">Tiempo de lectura: 2 minutos</span>
+                <span className="text-[10px] text-gray-400 uppercase tracking-widest block mb-1">↓</span>
+                <span className="text-[10px] text-gray-400 uppercase tracking-widest block">Tiempo de lectura: 2 minutos</span>
               </div>
             </FadeIn>
           </div>
@@ -111,7 +112,7 @@ const Corporate = () => {
             <div>
               <FadeIn>
                 <h2 className="text-[10px] font-bold tracking-[0.3em] text-white uppercase mb-12">El desafío.</h2>
-                <div className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed space-y-8">
+                <div className="text-xl md:text-2xl text-gray-200 font-light leading-relaxed space-y-8">
                   <p>La Major League Soccer requería establecer su presencia institucional en Argentina a través de un evento de alto perfil.</p>
                   <p className="text-white text-2xl md:text-3xl font-normal">El mandato era estricto: representar los estándares internacionales de la liga en cada punto de contacto.</p>
                   
@@ -119,7 +120,7 @@ const Corporate = () => {
                     <p className="text-xl md:text-2xl text-white font-normal mb-8">
                       La convocatoria reunió actores clave del ecosistema del fútbol argentino:
                     </p>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 text-lg text-gray-300 font-light list-none pl-0">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 text-lg text-gray-200 font-light list-none pl-0">
                       <li className="flex items-center space-x-4">
                         <span className="text-[#00E56A] text-2xl leading-none mb-1">•</span> 
                         <span>Periodistas deportivos</span>
@@ -151,10 +152,9 @@ const Corporate = () => {
                   <p className="text-white text-2xl md:text-3xl font-normal">La organización no admitía margen de error.</p>
                 </div>
 
-                {/* CTA mid-page */}
                 <FadeIn delay={0.3}>
                   <div className="mt-12 pt-10 border-t border-white/10">
-                    <p className="text-sm text-gray-500 font-light mb-6 tracking-wide">¿Tu próximo proyecto requiere este nivel de ejecución?</p>
+                    <p className="text-sm text-gray-400 font-light mb-6 tracking-wide">¿Tu próximo proyecto requiere este nivel de ejecución?</p>
                     <a href="#contacto" className="inline-flex items-center space-x-4 group">
                       <span className="px-8 py-4 bg-[#00E56A] text-black text-xs font-bold tracking-[0.25em] uppercase group-hover:bg-white transition-colors duration-300">
                         Agendar una reunión
